@@ -17,7 +17,7 @@ async function handleRequest(request) {
       try {
         return Response.redirect(
           await dashUrl(
-            "https://www.youtube.com/c/" + pathName[2] + "/live"
+            "https://www.youtube.com/@" + pathName[2] + "/live"
           ),
           302
         );
@@ -31,7 +31,7 @@ async function handleRequest(request) {
       try {
         return Response.redirect(
           await hlsUrl(
-            "https://www.youtube.com/c/" + pathName[2] + "/live"
+            "https://www.youtube.com/@" + pathName[2] + "/live"
           ),
           302
         );
